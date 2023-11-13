@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ChristmaslistComponent } from './christmaslist/christmaslist.component';
 import { ChristmasactivitiesComponent } from './christmasactivities/christmasactivities.component';
+import { FooterComponent } from './footer/footer.component';
+import { SweetsComponent } from './sweets/sweets.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +18,8 @@ import { ChristmasactivitiesComponent } from './christmasactivities/christmasact
             HomeComponent,
             ChristmasactivitiesComponent,
             ChristmaslistComponent,
+            FooterComponent,
+            SweetsComponent,
             RouterOutlet,
             RouterLinkActive,
             RouterOutlet],
