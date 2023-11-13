@@ -1,0 +1,6 @@
+img {
+    max-width: 45%; /* Ensure the image doesn't exceed its natural size */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove any extra spacing beneath the image */
+    margin: 0 auto; /* Center the image horizontally within its container */
+}
