@@ -1,0 +1,29 @@
+<mat-toolbar class="navbar-color">
+      <button mat-mini-fab [matMenuTriggerFor]="menu" class="green-btn" aria-label="Example icon button with a menu icon">
+        <mat-icon>menu</mat-icon>
+      </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item routerLink="/home">
+          <mat-icon>home</mat-icon>
+          <span>Home Page</span>
+        </button>
+        <button mat-menu-item routerLink="/christmaslist">
+          <mat-icon>list_alt</mat-icon>
+          <span>David's Christmas List</span>
+        </button>
+        <button mat-menu-item routerLink="/christmasactivities">
+            <mat-icon>celebration</mat-icon>
+            <span>Christmas Activities</span>
+        </button>
+        <button mat-menu-item routerLink="/sweets">
+            <mat-icon>cookie</mat-icon>
+            <span>Sweet Recipes</span>
+        </button>
+      </mat-menu>
+      <span class="spacer"></span>
+      <span class="center-text">David's Christmas Site!
+        <img class="xmas-lights" src="/assets/R.png">
+      </span>
+    <img src="/assets/tree_logo.png" class="logo-image">
+</mat-toolbar>
+<router-outlet></router-outlet>

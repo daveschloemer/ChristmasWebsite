@@ -1,0 +1,11 @@
+/* src/assets/fonts/your-font-file.css */
+@font-face {
+    font-family: 'Christmas';
+    src: url('./Christmas.otf') format('otf');
+    /* Add other font formats if necessary */
+  }
+  
+  body {
+    font-family: 'Christmas', sans-serif;
+  }
+  
