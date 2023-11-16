@@ -1,3 +1,4 @@
+<h1>David's Christmas List</h1>
 <div class="card-grid">
   <mat-card *ngFor="let card of cardsData" class="card">
     <mat-card class="example-card">
@@ -10,7 +11,7 @@
         <p>{{ card.description }}</p>
       </mat-card-content>
       <mat-card-actions>
-        <a mat-button [href]="card.link" target="_blank">{{ "LINK" }}</a>
+        <a mat-button [href]="card.link" target="_blank">{{ "More Details" }}</a>
       </mat-card-actions>
     </mat-card>
   </mat-card>

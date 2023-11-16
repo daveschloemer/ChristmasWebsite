@@ -1,16 +1,35 @@
+h1 {
+  text-align: center;
+  position: relative;
+  margin-top: 5rem;
+}
+
+
 .card-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 12px;
 }
 
+img {
+  width: 250px;
+  height: auto;
+  margin: auto;
+}
+
 .card {
   max-width: 400px;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
   margin-left: 2rem;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .example-card {
@@ -19,7 +38,22 @@
 
 .mat-card-actions {
   margin-top: auto;
-  align-self: end; 
+  align-self: end;
+}
+
+/* Fun holiday button styling */
+.mat-card-actions a.mat-button {
+  background-color: #ff6363; /* Red color for holiday theme */
+  color: #ffffff; /* White text color */
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.mat-card-actions a.mat-button:hover {
+  background-color: #c23c3c; /* Darker red color on hover */
 }
 
 @media (max-width: 767px) {
