@@ -7,9 +7,10 @@ import { SweetsComponent } from './sweets/sweets.component';
 import { FooterComponent } from './footer/footer.component';
 
 export const routes: Routes = [
-    { path: 'home', component: HomeComponent },
-    { path: 'christmaslist', component: ChristmaslistComponent },
-    { path: 'christmasactivities', component: ChristmasactivitiesComponent },
-    { path: 'sweets', component: SweetsComponent },
-    { path: 'footer', component: FooterComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'christmaslist', component: ChristmaslistComponent },
+  { path: 'christmasactivities', component: ChristmasactivitiesComponent },
+  { path: 'sweets', component: SweetsComponent },
+  { path: 'footer', component: FooterComponent },
 ];
