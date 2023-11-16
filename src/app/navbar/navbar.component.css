@@ -31,6 +31,27 @@
     height: auto;
     margin: 0 auto;
 }
+@media (max-width: 768px) {
+    .center-text {
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+        margin-right: 0px;
+        font-size: 16px;
+        font-family: fantasy;
+        margin-top: 3rem;
+    }
+    .logo-image {
+        width: 40px;
+        height: auto;
+    }
+    .xmas-lights {
+        display: block;
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+  }
   
   
   

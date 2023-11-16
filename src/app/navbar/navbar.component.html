@@ -1,5 +1,37 @@
-<mat-toolbar class="navbar-color">
-      <img src="/assets/tree_logo.png" class="logo-image" *ngIf="!isSmallScreen">
+<mat-toolbar class="navbar-color" *ngIf="!isSmallScreen">
+  <!-- ... Desktop components ... -->
+  <img src="/assets/tree_logo.png" class="logo-image" *ngIf="!isSmallScreen">
+  <span class="spacer" *ngIf="!isSmallScreen"></span>
+        <button mat-flat-button routerLink="/home" *ngIf="!isSmallScreen">
+          <mat-icon>home</mat-icon>
+          <span>Home Page</span>
+        </button>
+        <span class="spacer" *ngIf="!isSmallScreen"></span>
+        <button mat-flat-button routerLink="/christmaslist" *ngIf="!isSmallScreen">
+          <mat-icon>list_alt</mat-icon>
+          <span>David's Christmas List</span>
+        </button>
+        <span class="spacer" *ngIf="!isSmallScreen"></span>
+        <span class="center-text">David's Christmas Site!
+          <img class="xmas-lights" src="/assets/R.png">
+        </span>
+        <span class="spacer" *ngIf="!isSmallScreen"></span>
+        <button mat-flat-button routerLink="/christmasactivities" *ngIf="!isSmallScreen">
+          <mat-icon>celebration</mat-icon>
+          <span>Christmas Activities</span>
+        </button>
+        <span class="spacer" *ngIf="!isSmallScreen"></span>
+        <button mat-flat-button routerLink="/sweets" *ngIf="!isSmallScreen">
+          <mat-icon>cookie</mat-icon>
+          <span>Sweet Recipes</span>
+        </button>
+        <span class="spacer" *ngIf="!isSmallScreen"></span>
+    <img src="/assets/tree_logo.png" class="logo-image">
+</mat-toolbar>
+
+<mat-toolbar class="navbar-color" *ngIf="isSmallScreen">
+  <!-- ... Mobile components ... -->
+  <img src="/assets/tree_logo.png" class="logo-image" *ngIf="!isSmallScreen">
       <button mat-mini-fab [matMenuTriggerFor]="menu" class="green-btn" aria-label="" *ngIf="isSmallScreen">
         <mat-icon *ngIf="isSmallScreen">menu</mat-icon>
       </button>
@@ -21,31 +53,9 @@
             <span>Sweet Recipes</span>
         </button>
       </mat-menu>
-      <span class="spacer"></span>
-        <button mat-flat-button routerLink="/home" *ngIf="!isSmallScreen">
-          <mat-icon>home</mat-icon>
-          <span>Home Page</span>
-        </button>
-        <span class="spacer"></span>
-        <button mat-flat-button routerLink="/christmaslist" *ngIf="!isSmallScreen">
-          <mat-icon>list_alt</mat-icon>
-          <span>David's Christmas List</span>
-        </button>
-        <span class="spacer"></span>
-        <span class="center-text">David's Christmas Site!
+      <span class="center-text">David's Christmas Site!
           <img class="xmas-lights" src="/assets/R.png">
-        </span>
-        <span class="spacer"></span>
-        <button mat-flat-button routerLink="/christmasactivities" *ngIf="!isSmallScreen">
-          <mat-icon>celebration</mat-icon>
-          <span>Christmas Activities</span>
-        </button>
-        <span class="spacer"></span>
-        <button mat-flat-button routerLink="/sweets" *ngIf="!isSmallScreen">
-          <mat-icon>cookie</mat-icon>
-          <span>Sweet Recipes</span>
-        </button>
-        <span class="spacer"></span>
-    <img src="/assets/tree_logo.png" class="logo-image">
+      </span>
+      <img src="/assets/tree_logo.png" class="logo-image">
 </mat-toolbar>
 <router-outlet></router-outlet>

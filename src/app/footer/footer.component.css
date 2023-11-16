@@ -10,8 +10,13 @@ mat-toolbar {
     flex: 1;
     text-align: center;
     justify-content: center;
-    margin-right: 30px;
     font-size: 15px;
     margin-top: 1rem;
+    margin: 1rem auto;
 }
-  
+
+@media (max-width: 768px) {
+    .center-text {
+        font-size: 12px;
+    }
+  }
